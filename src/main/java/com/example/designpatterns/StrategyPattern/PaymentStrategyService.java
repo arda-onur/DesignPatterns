@@ -5,11 +5,11 @@ import org.springframework.stereotype.Service;
 import java.util.Map;
 
 @Service
-public class PaymentService {
+public class PaymentStrategyService {
 
     private final Map<String, PaymentStrategy> paymentStrategies;
 
-    public PaymentService(Map<String, PaymentStrategy> paymentStrategies) {
+    public PaymentStrategyService(Map<String, PaymentStrategy> paymentStrategies) {
         this.paymentStrategies = paymentStrategies;
     }
 
